@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <title>Alex Consulting</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.slider').slider();
+            $('.scrollspy').scrollSpy();
+            $('.datepicker').datepicker(); // Initialize datepicker
+        });
+
+    </script>
+</head>
+
+<body id="home">
+
+    <!-- navigation bar -->
+    <nav role="navigation">
+        <div class="nav-wrapper black lighten-1">
+            <a id="logo-container" href="#" class="brand-logo"><i class="large material-icons">code</i>Alex Consulting</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <section class="slider">
+        <ul class="slides">
+            <li>
+                <img src="new_image1.jpg">
+                <div class="caption center-align">
+                    <h1>Cutting-Edge Solutions</h1>
+                    <h5 class="light grey-text text-lighten-3">Stay Ahead with Alex Consulting</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+                </div>
+            </li>
+            <li>
+                <img src="new_image2.jpg">
+                <div class="caption left-align">
+                    <h1>Innovative Approaches</h1>
+                    <h5 class="light grey-text text-lighten-3">Your Technology, Perfected</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+                </div>
+            </li>
+            <li>
+                <img src="new_image3.jpg">
+                <div class="caption right-align">
+                    <h1>Driven by Excellence</h1>
+                    <h5 class="light grey-text text-lighten-3">Get the Best Results with Us</h5>
+                    <a class="waves-effect waves-light btn btn-large white black-text">Learn More</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- services -->
+    <div id="service" class="container scrollspy">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Speeds up development</h5>
+                        <p class="light">Our expertise ensures efficient and rapid development, allowing you to achieve your goals faster.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">User Experience Focused</h5>
+                        <p class="light">We create frameworks that enhance user interactions, providing seamless and engaging experiences.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center light-black-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Easy to work with</h5>
+                        <p class="light">Our solutions are user-friendly and backed by comprehensive documentation and support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- info -->
+    <section id="info" class="section section-info scrollspy">
+        <h4 class="center">Newest Tech Info</h4>
+        <h6 class="center">Updated: Oct 22, 2024</h6>
+        <div class="row">
+            <!-- Four cards as placeholders -->
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section section-about scrollspy">
+        <div class="container">
+            <h4 class="center">About Me</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                    <!-- Image -->
+                    <img src="IMG_1299.JPG" alt="Alex Tsoutsias" class="responsive-img" style="border-radius: 10px;">
+                </div>
+                <div class="col s12 m8">
+                    <!-- Description -->
+                    <p>Hello! My name is Alex, and I'm currently a student at Miami University in Ohio. I'm studying with a focus on business and entrepreneurship, aiming to gain the skills and knowledge to one day start my own company. I'm passionate about technology, innovation, and helping businesses solve complex problems through smart, efficient solutions. In my free time, I enjoy exploring the latest tech trends, networking with like-minded peers, and constantly seeking new opportunities to grow.</p>
+                    <!-- Contact Info -->
+                    <ul>
+                        <li><i class="material-icons left">email</i>Email: alex@example.com</li>
+                        <li><i class="material-icons left">phone</i>Phone: (123) 456-7890</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- social media -->
+    <section class="section section-follow black darken-2 white-text center">
+        <div class="container">
+            <h4>Follow Our Site</h4>
+            <p>Follow Our Social Media for Special Events and Deals</p>
+            <a href="#" class="white-text"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="white-text"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="white-text"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="white-text"><i class="fab fa-google-plus fa-2x"></i></a>
+            <a href="#" class="white-text"><i class="fab fa-pinterest fa-2x"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="section section-contact scrollspy">
+        <div class="container">
+            <h4 class="center">Contact Us</h4>
+            <div class="row">
+                <form action="https://formsubmit.co/youremail@example.com" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="name" type="text" name="name" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" name="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" type="tel" name="phone" class="validate">
+                            <label for="phone">Telephone</label>
+                        </div>
+                        <
